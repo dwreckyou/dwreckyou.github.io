@@ -1163,7 +1163,7 @@ a {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray;
     /* IE5+ */
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(0); /*leave color on for index.html*/
     /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
   .image-wrap-2:hover img {
@@ -1224,7 +1224,7 @@ a {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray;
     /* IE5+ */
-    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(0); /* leave color on for albums */
     /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
   #lightgallery .item:hover img {
