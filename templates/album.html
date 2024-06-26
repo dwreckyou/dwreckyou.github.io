@@ -70,65 +70,33 @@
     </header>
 
 
-
     <div class="site-section"  data-aos="fade">
       <div class="container-fluid">
-
         <div class="row justify-content-center">
-
           <div class="col-md-7">
             <div class="row mb-5">
               <div class="col-12 ">
-                <h2 class="site-section-heading text-center">Bariloche 4 Refugios</h2>
-                <h4 class="text-center"> Bariloche, AR </h4>
-                <h5 class="text-center">27.28mi, 11,982ft+</h5>
+                <h2 class="site-section-heading text-center">{{ trek.name }}</h2>
+                <h4 class="text-center"> {{ trek.location }} </h4>
+                <h5 class="text-center">{{ trek.stats }}</h5>
                 <div align="center">
-                <a href="../maps/bariloche_four_refugios.html" class="btn btn-outline-white py-2 px-4">Map</a>
+                {% if render_map %}
+                <a href="../maps/{{ trek.name | convert_snakecase }}.html" class="btn btn-outline-white py-2 px-4">Map</a>
+                {% endif %}
                 </div>
               </div>
             </div>
           </div>
-
-
         </div>
+
         <div class="row" id="lightgallery">
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/0.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/0.jpg" class="img-fluid"></a>
+         {% for image in images %} 
+          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/{{ trek.name | convert_snakecase }}/{{ image }}" data-sub-html="">
+            <a href="#"><img src="../images/{{ trek.name | convert_snakecase }}/{{ image }}" class="img-fluid"></a>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/1.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/1.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/2.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/2.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/3.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/3.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/4.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/4.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/5.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/5.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/6.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/6.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/7.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/7.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/8.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/8.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/9.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/9.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/10.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/10.jpg" class="img-fluid"></a>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="../images/bariloche_four_refugios/10.jpg" data-sub-html="">
-            <a href="#"><img src="../images/bariloche_four_refugios/11.jpg" class="img-fluid"></a>
-          </div>
+          {% endfor %}
         </div>
+
       </div>
     </div>
 

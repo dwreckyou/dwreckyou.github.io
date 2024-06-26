@@ -1,0 +1,92 @@
+[
+	{
+ 		"name": "Extended Ciro Trail",
+ 		"location": "Sarajevo, BiH -> Dubrovnik, HR",
+ 		"stats": "196mi, 14,761ft+"
+	},
+	{
+ 		"name": "Bariloche 4 Refugios",
+ 		"location": "Bariloche, AR",
+ 		"stats": "27.28mi, 11,982ft+"
+	},
+	{
+ 		"name": "Eurovelo 1 PT South",
+ 		"location": "Setubal -> Lagos, PT",
+ 		"stats": "208.7mi, 14,443ft+"
+	},
+	{
+ 		"name": "Bobotov Kuk",
+ 		"location": "RT <-> Žabljak, MNE",
+ 		"stats": "16.23mi, 5194ft+"
+	},
+	{
+ 		"name": "Maja Jezerce",
+ 		"location": "RT <-> Žabljak, MNE",
+ 		"stats": "28.72mi, 6827ft+"
+	},
+	{
+ 		"name": "GR20 Corsica",
+ 		"location": "Corsica",
+ 		"stats": "78mi, 30992ft+"
+	},
+	{
+ 		"name": "Walkers Haute Route",
+ 		"location": "Le Chable -> Zermatt, CH",
+ 		"stats": "90mi, 31,167ft+"
+	},
+	{
+ 		"name": "Camino de Santiago Portuguese Way",
+ 		"location": "Porto, PT -> Santiago de Compostela, ES",
+ 		"stats": "160.52mi, 13,957ft+"
+	},
+	{
+ 		"name": "West Highland Way",
+ 		"location": "Milngavie -> Fort William, SCT",
+ 		"stats": "100.36mi, 13,359ft+"
+	},
+	{
+ 		"name": "Fishermans Trail",
+ 		"location": "Porto Covo -> Arrifana, PT",
+ 		"stats": "62mi"
+	},
+	{
+ 		"name": "Tour du Mont Blanc",
+ 		"location": "RT <-> Chamonix, FR",
+ 		"stats": "103mi, 32,700ft+"
+	},
+	{
+ 		"name": "John Muir Trail",
+ 		"location": "Horseshoe Meadow -> Tuolomne, CA, USA",
+ 		"stats": "230mi, 47000ft+"
+	},
+	{
+ 		"name": "Rubicon Peak",
+ 		"location": "RT <-> Rubicon Bay, Lake Tahoe, CA, USA",
+ 		"stats": ""
+	},
+	{
+ 		"name": "Big Seki Loop",
+ 		"location": "RT <-> Roads End, CA, USA",
+ 		"stats": "classic high sierras bushwack detour"
+	},
+	{
+ 		"name": "Grand Canyon of Tuolumne",
+ 		"location": "White Wolf -> Tuolumne Meadows, CA, USA",
+ 		"stats": ""
+	},
+	{
+ 		"name": "Four Pass Loop",
+ 		"location": "RT <-> Aspen, CO, USA",
+ 		"stats": ""
+	},
+	{
+ 		"name": "Crater Lake Loop",
+ 		"location": "RT <-> Fort Klamath, OR, USA",
+ 		"stats": ""
+	},
+	{
+ 		"name": "Yosemite Loop",
+ 		"location": "Yosemite Valley, CA, USA",
+ 		"stats": ""
+	}
+]
