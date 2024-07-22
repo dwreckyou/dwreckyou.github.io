@@ -2,22 +2,26 @@
 	{
  		"name": "Alta Via 1 North",
  		"location": "Lago Braies, IT -> Cortina d'Ampezzo, IT ",
- 		"stats": "38.16mi, 10,070ft+"
+ 		"stats": "38.16mi, 10,070ft+",
+ 		"map": "https://www.google.com/maps/d/u/0/embed?mid=1G-mW753GeP8Av5NCinqF53-uY6jrBEQ&ehbc=2E312F&noprof=1"
 	},
 	{
  		"name": "Extended Ciro Trail",
  		"location": "Sarajevo, BiH -> Dubrovnik, HR",
- 		"stats": "196mi, 14,761ft+"
+ 		"stats": "196mi, 14,761ft+",
+ 		"map": "https://www.google.com/maps/d/u/0/embed?mid=1o2Hn2WoUNX6exeDoEWOjWas33TraF8c&ehbc=2E312F&noprof=1"
 	},
 	{
  		"name": "Bariloche 4 Refugios",
  		"location": "Bariloche, AR",
- 		"stats": "27.28mi, 11,982ft+"
+ 		"stats": "27.28mi, 11,982ft+",
+ 		"map": "https://www.google.com/maps/d/u/0/embed?mid=1hfabB-46t8s7wSJljxxCPMfJyJUZj9w&ehbc=2E312F&noprof=1"
 	},
 	{
  		"name": "Eurovelo 1 PT South",
  		"location": "Setubal -> Lagos, PT",
- 		"stats": "208.7mi, 14,443ft+"
+ 		"stats": "208.7mi, 14,443ft+",
+ 		"map": "https://www.google.com/maps/d/u/0/embed?mid=160-C3cj_7tERGHRHxSmzUD3jl6JDWGU&ehbc=2E312F&noprof=1"
 	},
 	{
  		"name": "Bobotov Kuk",
