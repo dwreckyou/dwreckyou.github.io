@@ -1,18 +1,31 @@
 from jinja2 import Environment, FileSystemLoader
 import os
 import json
+import requests
+from lxml import objectify, etree
+import re
 
 # ----------------------------------- helper funcs ----------------------------------- #
+
+CLOUD_FRONT_BASE_URL = "https://d2j97febc1ug11.cloudfront.net"
+
 def convert_snakecase(value):
     return value.replace(' ', '_').lower()
 
 def map_exists(trek):
 	return "map" in trek.keys()
 
-def get_images(trek):
-	directory = "images/" + convert_snakecase(trek)
-	images = [image for image in os.listdir(directory) if not image.startswith("thumbnail")]
-	return sorted(images, key=lambda x: int(os.path.splitext(x)[0]))
+def get_image_num(path):
+    return int(path.split('/')[-1].split('.')[0])
+
+def get_image_urls(trek):
+    res = requests.get(f"{CLOUD_FRONT_BASE_URL}?prefix=images/{trek['name'].lower().replace(' ', '_')}")
+    root = objectify.fromstring(res.text.encode())
+    image_urls = []
+    for elem in root.Contents:
+        if "thumbnail" not in str(elem.Key):
+            image_urls.append(CLOUD_FRONT_BASE_URL + "/" + elem.Key)
+    return sorted(image_urls, key=get_image_num)
 
 # # ---------------------script to generate static site html -------------------------- #
 
@@ -49,4 +62,5 @@ for trek in treks:
     with open(filename, 'w+') as f:
         f.write(template.render(trek=trek, 
         						render_map=map_exists(trek),
-        						images=get_images(trek['name'])))
+        						image_urls=get_image_urls(trek)
+        ))
