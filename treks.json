@@ -1,5 +1,11 @@
 [
 	{
+ 		"name": "Glacier Loop",
+ 		"location": "Whitefish, MT, USA RT ",
+ 		"stats": "218.73mi, 13848ft+ (bike), 27.05mi, 5466ft+ (hike)",
+ 		"map": "https://www.google.com/maps/d/u/0/embed?mid=1gAcQHQ2QYaC4-3Nv6X0biyJyREmeGBE&ehbc=2E312F&noprof=1"
+	},
+	{
  		"name": "Alta Via 1 North",
  		"location": "Lago Braies, IT -> Cortina d'Ampezzo, IT ",
  		"stats": "38.16mi, 10,070ft+",
