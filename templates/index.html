@@ -12,7 +12,7 @@
               <h2 class="mb-3">{{ trek }}</h2>
               <a href="albums/{{ trek | convert_snakecase }}.html" class="btn btn-outline-white py-2 px-4">View</a>
             </div>
-            <img src="https://d2j97febc1ug11.cloudfront.net/images/{{ trek | convert_snakecase }}/thumbnail.jpg" alt="Image" class="img-fluid">
+            <img src="https://d2j97febc1ug11.cloudfront.net/images/{{ trek | convert_snakecase }}/thumbnail.jpg" alt="Image" class="img-fluid" loading="lazy">
           </div>
         </div>
       {% endfor %}

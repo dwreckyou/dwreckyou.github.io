@@ -1,5 +1,11 @@
 [
 	{
+ 		"name": "Strip to Strip",
+ 		"location": "Las Vegas, NV, USA -> Black Canyon",
+ 		"stats": "32.42mi, 4667ft+ (hike), 15mi (raft)",
+ 		"map": "https://www.google.com/maps/d/u/1/embed?mid=1nO95rA9hNUmgkaLbqvvE8W-qZm9WBEo&ehbc=2E312F&noprof=1"
+	},
+	{
  		"name": "Travessia Polis",
  		"location": "Petropolis, BR -> Teresopolis, BR",
  		"stats": "19.53mi, 5932ft+",
